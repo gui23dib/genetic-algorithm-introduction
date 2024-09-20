@@ -3,7 +3,7 @@ from chromosome import ChromosomeClass
 
 class PopulationClass:
   population: list[ChromosomeClass] = []
-  best_fitness: float = 0.0
+  best_fitness: float = -1.0
 
   def __init__(self):
     pass
@@ -18,5 +18,5 @@ class PopulationClass:
 
   def sort_population(self) -> list[ChromosomeClass]:
     self.population = sorted(self.population, key=lambda x: x.fitness, reverse=True)
-    self.population[0].fitness = self.best_fitness
+    self.best_fitness = self.population[0].fitness # best fitness is the first element of the sorted list
     return self.population

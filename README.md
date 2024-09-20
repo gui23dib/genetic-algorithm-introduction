@@ -1,5 +1,5 @@
 # genetic-algorithm-introduction
 
 ``` bash
-    py main.py
+py main.py
 ```

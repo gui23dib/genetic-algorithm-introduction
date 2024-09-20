@@ -25,7 +25,7 @@ def new_generation(population: list[ChromosomeClass], n_survivors: int = 2) -> l
     return sorted(population, key=lambda x: x.fitness, reverse=True)[:n_survivors]
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     word_obj: str = str(input()).upper()
     objective: list[int] = [ord(e) for e in word_obj]
 
