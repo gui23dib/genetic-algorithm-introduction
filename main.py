@@ -60,10 +60,10 @@ if __name__ == '__main__':
 
             population.population = new_population
             gen_count += 1
-    except:
-        print("No input given.")
     except KeyboardInterrupt:
-        print("Process interrupted by user.")
+        print("Process interrupted by user")
+    except:
+        print("No input given")
 
     print("All generations have been processed.")
     print(f"Total generations: {gen_count}")
